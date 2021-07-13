@@ -23,7 +23,7 @@ void Task1()
 void Task2()
 {
 	cout << "Работа с классом RGBA:" << endl << endl;
-	RGBA myRgba{};
+	RGBA myRgba;
 	cout << "Создали экземпляр класса с не параметризованным конструктором, вызвали метод print()" << endl;
 	myRgba.print();
 	cout << "Теперь внесём значения каналов и создадим новый экземпляр с этими параметрами:" << endl;
@@ -42,13 +42,19 @@ void Task2()
 
 void Task3()
 {
-#define SIZE 6
-
-	/*cout << "Сортировка пользовательского массива:" << endl << endl;
-	int* arrPtr = createIntArr(SIZE);
-	initArr(arrPtr, SIZE);
-	bubbleSort(arrPtr, SIZE);
-	PrintArr(SIZE, false, arrPtr);*/
+	cout << "Работа со Stack:" << endl << endl;
+	Stack stack;
+	stack.reset();
+	stack.print();
+	stack.push(3);
+	stack.push(7);
+	stack.push(5);
+	stack.print();
+	stack.pop();
+	stack.print();
+	stack.pop();
+	stack.pop();
+	stack.print();
 }
 
 
