@@ -22,13 +22,22 @@ void Task1()
 
 void Task2()
 {
-	/*cout << "Проверка принадлежности введеного числа интервалу:" << endl << endl;
-	cout << "Введите положительное число: ";
-	unsigned short a = GetUserInput(true);
-	const unsigned short end = 100;
-	if (checkNumberInInterval(a, end)) cout << "true";
-	else cout << "false";
-	cout << endl;*/
+	cout << "Работа с классом RGBA:" << endl << endl;
+	RGBA myRgba{};
+	cout << "Создали экземпляр класса с не параметризованным конструктором, вызвали метод print()" << endl;
+	myRgba.print();
+	cout << "Теперь внесём значения каналов и создадим новый экземпляр с этими параметрами:" << endl;
+	cout << "R = ";
+	auto r = GetUserInput<unsigned int>(true);
+	cout << "G = ";
+	auto g = GetUserInput<unsigned int>(true);
+	cout << "B = ";
+	auto b = GetUserInput<unsigned int>(true);
+	cout << "Alpha = ";
+	auto a = GetUserInput<unsigned int>(true);
+	RGBA newRgba(r, g, b, a);
+	newRgba.print();
+	cout << endl;
 }
 
 void Task3()

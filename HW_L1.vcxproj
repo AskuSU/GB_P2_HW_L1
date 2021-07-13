@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="HW_L1.cpp" />
     <ClCompile Include="MyLib.cpp" />
+    <ClCompile Include="Task2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h" />
